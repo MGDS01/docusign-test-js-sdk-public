@@ -1,0 +1,38 @@
+speakeasyVersion: 1.533.0
+sources:
+    DocusignTest-OAS:
+        sourceNamespace: docusign-test-oas
+        sourceRevisionDigest: sha256:ee6786338880e5b65a842d98c8aee01a9a76458eb1daa9b091d9598c0fcc00c8
+        sourceBlobDigest: sha256:d64db14730d2d08603540f83575a445173840ddfcc2d685cc858537b2385658c
+        tags:
+            - latest
+            - "2.0"
+targets:
+    docusign-test:
+        source: DocusignTest-OAS
+        sourceNamespace: docusign-test-oas
+        sourceRevisionDigest: sha256:ee6786338880e5b65a842d98c8aee01a9a76458eb1daa9b091d9598c0fcc00c8
+        sourceBlobDigest: sha256:d64db14730d2d08603540f83575a445173840ddfcc2d685cc858537b2385658c
+        codeSamplesNamespace: docusign-test-oas-typescript-code-samples
+        codeSamplesRevisionDigest: sha256:6667055ea0787b11500c92f69e766267beb91b05a258fc1c3e22cfde364620d3
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        DocusignTest-OAS:
+            inputs:
+                - location: https://raw.githubusercontent.com/MGDS01/openapiSecTest/main/openapi.yaml
+            overlays:
+                - location: .speakeasy/speakeasy-modifications-overlay.yaml
+            registry:
+                location: registry.speakeasyapi.dev/docusign/docusign/docusign-test-oas
+    targets:
+        docusign-test:
+            target: typescript
+            source: DocusignTest-OAS
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/docusign/docusign/docusign-test-oas-typescript-code-samples
+                labelOverride:
+                    fixedValue: Typescript (SDK)
+                blocking: false

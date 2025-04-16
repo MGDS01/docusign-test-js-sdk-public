@@ -1,0 +1,649 @@
+lockVersion: 2.0.0
+id: 5ef267f3-fe4e-4ad6-99c2-4e60e3e695d9
+management:
+  docChecksum: 7172ab56fad46027ad200f9fd651da1d
+  docVersion: "2.0"
+  speakeasyVersion: 1.533.0
+  generationVersion: 2.578.0
+  releaseVersion: 0.0.11
+  configChecksum: 31ec33ec9e4931fe67e895efe40410ca
+features:
+  typescript:
+    additionalDependencies: 0.1.0
+    core: 3.21.6
+    defaultEnabledRetries: 0.1.0
+    devContainers: 2.90.0
+    downloadStreams: 0.1.1
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.1.2
+    globalSecurity: 2.82.13
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.4
+    mcpServer: 0.9.1
+    nameOverrides: 2.81.2
+    nullables: 0.1.1
+    responseFormat: 0.2.3
+    retries: 2.83.0
+    sdkHooks: 0.2.0
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - .npmignore
+  - FUNCTIONS.md
+  - RUNTIMES.md
+  - USAGE.md
+  - docs/lib/utils/retryconfig.md
+  - docs/models/components/createworkspacebody.md
+  - docs/models/components/createworkspaceenveloperesponse.md
+  - docs/models/components/createworkspaceresponse.md
+  - docs/models/components/createworkspaceuserresponse.md
+  - docs/models/components/getworkspaceassignablerolesresponse.md
+  - docs/models/components/getworkspacedocumentresponse.md
+  - docs/models/components/getworkspacedocumentsresponse.md
+  - docs/models/components/getworkspaceenvelopesresponse.md
+  - docs/models/components/getworkspaceresponse.md
+  - docs/models/components/getworkspacesresponse.md
+  - docs/models/components/getworkspaceusersresponse.md
+  - docs/models/components/getworkspaceuserssortingoption.md
+  - docs/models/components/revokeworkspaceuserdetails.md
+  - docs/models/components/security.md
+  - docs/models/components/updateworkspaceuserresponse.md
+  - docs/models/components/workspacedocument.md
+  - docs/models/components/workspacedocumentowner.md
+  - docs/models/components/workspaceenvelopeforcreate.md
+  - docs/models/components/workspaceenvelopesummary.md
+  - docs/models/components/workspacerolesummary.md
+  - docs/models/components/workspacesummary.md
+  - docs/models/components/workspaceuserforcreate.md
+  - docs/models/components/workspaceuserforupdate.md
+  - docs/models/components/workspaceusersummary.md
+  - docs/models/errors/errordetails.md
+  - docs/models/operations/addworkspaceuserrequest.md
+  - docs/models/operations/createworkspaceenveloperequest.md
+  - docs/models/operations/createworkspacerequest.md
+  - docs/models/operations/deleteworkspacedocumentrequest.md
+  - docs/models/operations/getworkspaceassignablerolesrequest.md
+  - docs/models/operations/getworkspacedocumentcontentsrequest.md
+  - docs/models/operations/getworkspacedocumentrequest.md
+  - docs/models/operations/getworkspacedocumentsrequest.md
+  - docs/models/operations/getworkspaceenvelopesrequest.md
+  - docs/models/operations/getworkspacerequest.md
+  - docs/models/operations/getworkspacesrequest.md
+  - docs/models/operations/getworkspaceusersrequest.md
+  - docs/models/operations/restoreworkspaceuseraccessrequest.md
+  - docs/models/operations/revokeworkspaceuseraccessrequest.md
+  - docs/models/operations/updateworkspaceuserrequest.md
+  - docs/sdks/docusigntest/README.md
+  - docs/sdks/workspacedocuments/README.md
+  - docs/sdks/workspaces/README.md
+  - docs/sdks/workspaceusers/README.md
+  - eslint.config.mjs
+  - jsr.json
+  - package.json
+  - src/core.ts
+  - src/funcs/workspaceDocumentsDelete.ts
+  - src/funcs/workspaceDocumentsGet.ts
+  - src/funcs/workspaceDocumentsGetContents.ts
+  - src/funcs/workspaceDocumentsList.ts
+  - src/funcs/workspaceUsersAdd.ts
+  - src/funcs/workspaceUsersList.ts
+  - src/funcs/workspaceUsersRestoreAccess.ts
+  - src/funcs/workspaceUsersRevokeAccess.ts
+  - src/funcs/workspaceUsersUpdate.ts
+  - src/funcs/workspacesCreate.ts
+  - src/funcs/workspacesCreateEnvelope.ts
+  - src/funcs/workspacesGet.ts
+  - src/funcs/workspacesList.ts
+  - src/funcs/workspacesListAssignableRoles.ts
+  - src/funcs/workspacesListEnvelopes.ts
+  - src/hooks/hooks.ts
+  - src/hooks/index.ts
+  - src/hooks/types.ts
+  - src/index.ts
+  - src/lib/base64.ts
+  - src/lib/config.ts
+  - src/lib/dlv.ts
+  - src/lib/encodings.ts
+  - src/lib/env.ts
+  - src/lib/files.ts
+  - src/lib/http.ts
+  - src/lib/is-plain-object.ts
+  - src/lib/logger.ts
+  - src/lib/matchers.ts
+  - src/lib/primitives.ts
+  - src/lib/retries.ts
+  - src/lib/schemas.ts
+  - src/lib/sdks.ts
+  - src/lib/security.ts
+  - src/lib/url.ts
+  - src/mcp-server/build.mts
+  - src/mcp-server/cli.ts
+  - src/mcp-server/cli/start/command.ts
+  - src/mcp-server/cli/start/impl.ts
+  - src/mcp-server/console-logger.ts
+  - src/mcp-server/extensions.ts
+  - src/mcp-server/mcp-server.ts
+  - src/mcp-server/prompts.ts
+  - src/mcp-server/resources.ts
+  - src/mcp-server/scopes.ts
+  - src/mcp-server/server.ts
+  - src/mcp-server/shared.ts
+  - src/mcp-server/tools.ts
+  - src/mcp-server/tools/workspaceDocumentsDelete.ts
+  - src/mcp-server/tools/workspaceDocumentsGet.ts
+  - src/mcp-server/tools/workspaceDocumentsGetContents.ts
+  - src/mcp-server/tools/workspaceDocumentsList.ts
+  - src/mcp-server/tools/workspaceUsersAdd.ts
+  - src/mcp-server/tools/workspaceUsersList.ts
+  - src/mcp-server/tools/workspaceUsersRestoreAccess.ts
+  - src/mcp-server/tools/workspaceUsersRevokeAccess.ts
+  - src/mcp-server/tools/workspaceUsersUpdate.ts
+  - src/mcp-server/tools/workspacesCreate.ts
+  - src/mcp-server/tools/workspacesCreateEnvelope.ts
+  - src/mcp-server/tools/workspacesGet.ts
+  - src/mcp-server/tools/workspacesList.ts
+  - src/mcp-server/tools/workspacesListAssignableRoles.ts
+  - src/mcp-server/tools/workspacesListEnvelopes.ts
+  - src/models/components/createworkspacebody.ts
+  - src/models/components/createworkspaceenveloperesponse.ts
+  - src/models/components/createworkspaceresponse.ts
+  - src/models/components/createworkspaceuserresponse.ts
+  - src/models/components/getworkspaceassignablerolesresponse.ts
+  - src/models/components/getworkspacedocumentresponse.ts
+  - src/models/components/getworkspacedocumentsresponse.ts
+  - src/models/components/getworkspaceenvelopesresponse.ts
+  - src/models/components/getworkspaceresponse.ts
+  - src/models/components/getworkspacesresponse.ts
+  - src/models/components/getworkspaceusersresponse.ts
+  - src/models/components/getworkspaceuserssortingoption.ts
+  - src/models/components/index.ts
+  - src/models/components/revokeworkspaceuserdetails.ts
+  - src/models/components/security.ts
+  - src/models/components/updateworkspaceuserresponse.ts
+  - src/models/components/workspacedocument.ts
+  - src/models/components/workspacedocumentowner.ts
+  - src/models/components/workspaceenvelopeforcreate.ts
+  - src/models/components/workspaceenvelopesummary.ts
+  - src/models/components/workspacerolesummary.ts
+  - src/models/components/workspacesummary.ts
+  - src/models/components/workspaceuserforcreate.ts
+  - src/models/components/workspaceuserforupdate.ts
+  - src/models/components/workspaceusersummary.ts
+  - src/models/errors/apierror.ts
+  - src/models/errors/errordetails.ts
+  - src/models/errors/httpclienterrors.ts
+  - src/models/errors/index.ts
+  - src/models/errors/sdkvalidationerror.ts
+  - src/models/operations/addworkspaceuser.ts
+  - src/models/operations/createworkspace.ts
+  - src/models/operations/createworkspaceenvelope.ts
+  - src/models/operations/deleteworkspacedocument.ts
+  - src/models/operations/getworkspace.ts
+  - src/models/operations/getworkspaceassignableroles.ts
+  - src/models/operations/getworkspacedocument.ts
+  - src/models/operations/getworkspacedocumentcontents.ts
+  - src/models/operations/getworkspacedocuments.ts
+  - src/models/operations/getworkspaceenvelopes.ts
+  - src/models/operations/getworkspaces.ts
+  - src/models/operations/getworkspaceusers.ts
+  - src/models/operations/index.ts
+  - src/models/operations/restoreworkspaceuseraccess.ts
+  - src/models/operations/revokeworkspaceuseraccess.ts
+  - src/models/operations/updateworkspaceuser.ts
+  - src/sdk/index.ts
+  - src/sdk/sdk.ts
+  - src/sdk/workspacedocuments.ts
+  - src/sdk/workspaces.ts
+  - src/sdk/workspaceusers.ts
+  - src/types/async.ts
+  - src/types/blobs.ts
+  - src/types/constdatetime.ts
+  - src/types/enums.ts
+  - src/types/fp.ts
+  - src/types/index.ts
+  - src/types/operations.ts
+  - src/types/rfcdate.ts
+  - src/types/streams.ts
+  - tsconfig.json
+examples:
+  updatePet:
+    speakeasy-default-update-pet-json:
+      requestBody:
+        application/json: {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": ["<value>"]}
+      responses:
+        "200":
+          application/json: {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": ["<value>"]}
+          application/xml: "0x842783ea9d"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-update-pet-raw:
+      requestBody:
+        application/xml: "x-file: example.file"
+      responses:
+        "200":
+          application/json: {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": ["<value>"]}
+          application/xml: "0xC7D6C5f13E"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-update-pet-form:
+      requestBody:
+        application/x-www-form-urlencoded: {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": ["<value>", "<value>"]}
+      responses:
+        "200":
+          application/json: {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": ["<value>"]}
+          application/xml: "0xBEcfd4dDfC"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  addPet:
+    speakeasy-default-add-pet-json:
+      requestBody:
+        application/json: {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": ["<value>", "<value>", "<value>"]}
+      responses:
+        "200":
+          application/json: {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": ["<value>", "<value>"]}
+          application/xml: "0xCAfA13bD0B"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-add-pet-raw:
+      requestBody:
+        application/xml: "x-file: example.file"
+      responses:
+        "200":
+          application/json: {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": ["<value>", "<value>"]}
+          application/xml: "0x58Cd683A3e"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-add-pet-form:
+      requestBody:
+        application/x-www-form-urlencoded: {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": []}
+      responses:
+        "200":
+          application/json: {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": ["<value>", "<value>", "<value>"]}
+          application/xml: "0xc4d65Fa0E6"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  findPetsByStatus:
+    speakeasy-default-find-pets-by-status:
+      parameters:
+        query:
+          status: "available"
+      responses:
+        "200":
+          application/json: [{"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": []}, {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": ["<value>"]}, {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": []}]
+          application/xml: "0xB0a632543C"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  findPetsByTags:
+    speakeasy-default-find-pets-by-tags:
+      responses:
+        "200":
+          application/json: [{"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": ["<value>", "<value>", "<value>"]}]
+          application/xml: "0xfbAC3e8bD9"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  getPetById:
+    speakeasy-default-get-pet-by-id:
+      parameters:
+        path:
+          petId: 504151
+      responses:
+        "200":
+          application/json: {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": []}
+          application/xml: "0xb23Cfd42BB"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  updatePetWithForm:
+    speakeasy-default-update-pet-with-form:
+      parameters:
+        path:
+          petId: 303241
+        query: {}
+      responses:
+        "200":
+          application/json: {"id": 10, "name": "doggie", "category": {"id": 1, "name": "Dogs"}, "photoUrls": ["<value>", "<value>", "<value>"]}
+          application/xml: "0x6dD3f6B027"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  deletePet:
+    speakeasy-default-delete-pet:
+      parameters:
+        path:
+          petId: 441876
+        header: {}
+      responses:
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  uploadFile:
+    speakeasy-default-upload-file:
+      parameters:
+        path:
+          petId: 565380
+        query: {}
+      responses:
+        "200":
+          application/json: {}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  getInventory:
+    speakeasy-default-get-inventory:
+      responses:
+        "200":
+          application/json: {"key": 373538, "key1": 961069}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  placeOrder:
+    speakeasy-default-place-order-json:
+      requestBody:
+        application/json: {"id": 10, "petId": 198772, "quantity": 7, "status": "approved"}
+      responses:
+        "200":
+          application/json: {"id": 10, "petId": 198772, "quantity": 7, "status": "approved"}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-place-order-raw:
+      responses:
+        "200":
+          application/json: {"id": 10, "petId": 198772, "quantity": 7, "status": "approved"}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-place-order-form:
+      requestBody:
+        application/x-www-form-urlencoded: {"id": 10, "petId": 198772, "quantity": 7, "status": "approved"}
+      responses:
+        "200":
+          application/json: {"id": 10, "petId": 198772, "quantity": 7, "status": "approved"}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  getOrderById:
+    speakeasy-default-get-order-by-id:
+      parameters:
+        path:
+          orderId: 614993
+      responses:
+        "200":
+          application/json: {"id": 10, "petId": 198772, "quantity": 7, "status": "approved"}
+          application/xml: "0x51EB64dCdd"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  deleteOrder:
+    speakeasy-default-delete-order:
+      parameters:
+        path:
+          orderId: 127902
+      responses:
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  createUser:
+    speakeasy-default-create-user-json:
+      requestBody:
+        application/json: {"id": 10, "username": "theUser", "firstName": "John", "lastName": "James", "email": "john@email.com", "password": "12345", "phone": "12345", "userStatus": 1}
+      responses:
+        "200":
+          application/json: {"id": 10, "username": "theUser", "firstName": "John", "lastName": "James", "email": "john@email.com", "password": "12345", "phone": "12345", "userStatus": 1}
+          application/xml: "0xdF8B4DBd5B"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-create-user-raw:
+      responses:
+        "200":
+          application/json: {"id": 10, "username": "theUser", "firstName": "John", "lastName": "James", "email": "john@email.com", "password": "12345", "phone": "12345", "userStatus": 1}
+          application/xml: "0xBdBEe6E5bE"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-create-user-form:
+      requestBody:
+        application/x-www-form-urlencoded: {"id": 10, "username": "theUser", "firstName": "John", "lastName": "James", "email": "john@email.com", "password": "12345", "phone": "12345", "userStatus": 1}
+      responses:
+        "200":
+          application/json: {"id": 10, "username": "theUser", "firstName": "John", "lastName": "James", "email": "john@email.com", "password": "12345", "phone": "12345", "userStatus": 1}
+          application/xml: "0xcBc71Bde80"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  createUsersWithListInput:
+    speakeasy-default-create-users-with-list-input:
+      requestBody:
+        application/json: [{"id": 10, "username": "theUser", "firstName": "John", "lastName": "James", "email": "john@email.com", "password": "12345", "phone": "12345", "userStatus": 1}]
+      responses:
+        "200":
+          application/json: {"id": 10, "username": "theUser", "firstName": "John", "lastName": "James", "email": "john@email.com", "password": "12345", "phone": "12345", "userStatus": 1}
+          application/xml: "0xC0b2D5cEE7"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  loginUser:
+    speakeasy-default-login-user:
+      responses:
+        "200":
+          application/xml: "<value>"
+          application/json: "<value>"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  logoutUser:
+    speakeasy-default-logout-user:
+      responses:
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  getUserByName:
+    speakeasy-default-get-user-by-name:
+      parameters:
+        path:
+          username: "Zachery_Lubowitz15"
+      responses:
+        "200":
+          application/json: {"id": 10, "username": "theUser", "firstName": "John", "lastName": "James", "email": "john@email.com", "password": "12345", "phone": "12345", "userStatus": 1}
+          application/xml: "0xb60ad6AdFe"
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  updateUser:
+    speakeasy-default-update-user-json:
+      parameters:
+        path:
+          username: "Alanna98"
+      requestBody:
+        application/json: {"id": 10, "username": "theUser", "firstName": "John", "lastName": "James", "email": "john@email.com", "password": "12345", "phone": "12345", "userStatus": 1}
+      responses:
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-update-user-raw:
+      parameters:
+        path:
+          username: "Maximus_Gulgowski38"
+      responses:
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-update-user-form:
+      parameters:
+        path:
+          username: "Bo.Beatty-Mraz90"
+      requestBody:
+        application/x-www-form-urlencoded: {"id": 10, "username": "theUser", "firstName": "John", "lastName": "James", "email": "john@email.com", "password": "12345", "phone": "12345", "userStatus": 1}
+      responses:
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  deleteUser:
+    speakeasy-default-delete-user:
+      parameters:
+        path:
+          username: "Demetris_Schmitt"
+      responses:
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  getWorkspaceDocuments:
+    speakeasy-default-get-workspace-documents:
+      parameters:
+        path:
+          accountId: "9cc31b33-195e-4e49-afbc-7023822fc19b"
+          workspaceId: "d88e63cd-2368-4f35-a54c-1bb45e45a7b7"
+        query: {}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+  getWorkspaceDocument:
+    speakeasy-default-get-workspace-document:
+      parameters:
+        path:
+          accountId: "013770a4-c521-421c-9da0-b3bd672b65a9"
+          workspaceId: "0e82675f-e05a-4b78-93f4-17e818108125"
+          documentId: "679ce20a-e8fb-42c0-ae82-756d1743a4eb"
+      responses:
+        "200":
+          application/json: {"document_id": "f97a0769-8179-429c-a28c-b02d70dc2fba", "name": "<value>"}
+        "400":
+          application/json: {}
+  deleteWorkspaceDocument:
+    speakeasy-default-delete-workspace-document:
+      parameters:
+        path:
+          accountId: "58b71070-3b46-4d9b-bccd-d2840fb7cecd"
+          workspaceId: "f742ff03-9c13-46ba-bafc-3ece0d4ebf14"
+          documentId: "4d6c2f3a-7293-419c-8ff2-3669540deffc"
+      responses:
+        "400":
+          application/json: {}
+  getWorkspaceDocumentContents:
+    speakeasy-default-get-workspace-document-contents:
+      parameters:
+        path:
+          accountId: "2c39894d-e20a-48b0-b42f-fed5a3b9d88b"
+          workspaceId: "fd4cc718-b4a2-4e0f-baee-56dcbf0b79c8"
+          documentId: "12360a44-8764-4fea-ae1a-0b0c0f7e1ff3"
+      responses:
+        "200":
+          application/octet-stream: "x-file: example.file"
+        "400":
+          application/json: {}
+  getWorkspaceUsers:
+    speakeasy-default-get-workspace-users:
+      parameters:
+        path:
+          accountId: "23f0ff88-a4bb-40fa-83e8-2e618ef6da3c"
+          workspaceId: "47d954a1-024f-4fab-a017-999dd8078165"
+        query: {}
+      responses:
+        "200":
+          application/json: {"users": [{}, {}]}
+        "400":
+          application/json: {}
+  addWorkspaceUser:
+    speakeasy-default-add-workspace-user:
+      parameters:
+        path:
+          accountId: "ccffb2a1-a160-42aa-9a14-0df308322637"
+          workspaceId: "e089417f-24b7-40e9-b0ca-215b2cb24e7b"
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+  updateWorkspaceUser:
+    speakeasy-default-update-workspace-user:
+      parameters:
+        path:
+          accountId: "e2f6bd9b-e417-4ccc-b2cd-ecdc76a9a4ca"
+          workspaceId: "61e66166-7fc8-4df1-9b59-69afe5877b2b"
+          userId: "00960462-d5ff-4660-808b-b42e1dc30b9e"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+  revokeWorkspaceUserAccess:
+    speakeasy-default-revoke-workspace-user-access:
+      parameters:
+        path:
+          accountId: "c5cf2322-7ff7-4a37-b361-cbcedd0d2da6"
+          workspaceId: "eff7a823-195f-4533-b26f-3f00c48e15b0"
+          userId: "a8f62da2-ab0f-4dd1-a202-1404e65d3855"
+      responses:
+        "400":
+          application/json: {}
+  restoreWorkspaceUserAccess:
+    speakeasy-default-restore-workspace-user-access:
+      parameters:
+        path:
+          accountId: "f2a0c30e-48e9-429a-8e7f-cb9b2912842a"
+          workspaceId: "6bcb9933-72ad-4255-9471-f3a48f233c64"
+          userId: "12447a3a-c25d-4b6e-a207-1450453e6c62"
+      responses:
+        "400":
+          application/json: {}
+  getWorkspaces:
+    speakeasy-default-get-workspaces:
+      parameters:
+        path:
+          accountId: "d1bb97d0-cd2e-4197-a211-df866518b12e"
+        query: {}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+  createWorkspace:
+    speakeasy-default-create-workspace:
+      parameters:
+        path:
+          accountId: "20438055-b036-4cd0-bcf0-425b53b0c039"
+      requestBody:
+        application/json: {"name": "<value>"}
+        text/json: {"name": "<value>"}
+        application/*+json: {"name": "<value>"}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+  getWorkspace:
+    speakeasy-default-get-workspace:
+      parameters:
+        path:
+          accountId: "d0731b89-4f40-4d47-a8c6-a1c6b63228dc"
+          workspaceId: "6dbccd48-3f7c-402f-b6de-3e36daff3b94"
+      responses:
+        "200":
+          application/json: {"workspace_id": "439081d2-6ca3-4ef2-b07e-d9d2b8a2a6b1"}
+        "400":
+          application/json: {}
+  getWorkspaceAssignableRoles:
+    speakeasy-default-get-workspace-assignable-roles:
+      parameters:
+        path:
+          accountId: "412ae55e-dd69-47c7-bc4a-568d48d1542a"
+          workspaceId: "d243e618-a66a-493b-be80-92ab46fe07df"
+        query: {}
+      responses:
+        "200":
+          application/json: {"roles": [{}]}
+        "400":
+          application/json: {}
+  createWorkspaceEnvelope:
+    speakeasy-default-create-workspace-envelope:
+      parameters:
+        path:
+          accountId: "ef54239d-b3ad-476f-9f59-503044654ad9"
+          workspaceId: "d0076563-8120-4784-85c4-5d6c143bc0ff"
+      requestBody:
+        application/json: {"envelope_name": "<value>"}
+        text/json: {"envelope_name": "<value>"}
+        application/*+json: {"envelope_name": "<value>"}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+  getWorkspaceEnvelopes:
+    speakeasy-default-get-workspace-envelopes:
+      parameters:
+        path:
+          accountId: "16c71e73-b096-4a64-9ed9-f726eeb4ea96"
+          workspaceId: "79dd5386-9d8b-4599-9854-8e07cf8abd0b"
+      responses:
+        "200":
+          application/json: {"envelopes": [{"envelope_id": "<id>", "status": "<value>"}, {"envelope_id": "<id>", "status": "<value>"}]}
+        "400":
+          application/json: {}
+examplesVersion: 1.0.1
+generatedTests: {}
