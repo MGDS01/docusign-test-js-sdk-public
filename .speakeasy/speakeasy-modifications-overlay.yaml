@@ -1,0 +1,154 @@
+overlay: 1.0.0
+x-speakeasy-jsonpath: rfc9535
+info:
+  title: Speakeasy Modifications
+  version: 0.0.2
+  x-speakeasy-metadata:
+    after: ""
+    before: ""
+    type: speakeasy-modifications
+actions:
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/documents/{documentId}/contents"]["get"]
+    update:
+      x-speakeasy-name-override: getContents
+    x-speakeasy-metadata:
+      after: sdk.workspaceDocuments.getContents()
+      before: sdk.WorkspaceDocuments.getWorkspaceDocumentContents()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/assignable-roles"]["get"]
+    update:
+      x-speakeasy-name-override: listAssignableRoles
+    x-speakeasy-metadata:
+      after: sdk.workspaces.listAssignableRoles()
+      before: sdk.Workspaces.getWorkspaceAssignableRoles()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/users/{userId}/actions/revoke-access"]["post"]
+    update:
+      x-speakeasy-name-override: revokeAccess
+    x-speakeasy-metadata:
+      after: sdk.workspaceUsers.revokeAccess()
+      before: sdk.WorkspaceUsers.revokeWorkspaceUserAccess()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/users/{userId}/actions/restore-access"]["post"]
+    update:
+      x-speakeasy-name-override: restoreAccess
+    x-speakeasy-metadata:
+      after: sdk.workspaceUsers.restoreAccess()
+      before: sdk.WorkspaceUsers.restoreWorkspaceUserAccess()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/documents/{documentId}"]["delete"]
+    update:
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      after: sdk.workspaceDocuments.delete()
+      before: sdk.WorkspaceDocuments.deleteWorkspaceDocument()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/users"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.workspaceUsers.list()
+      before: sdk.WorkspaceUsers.getWorkspaceUsers()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.workspaces.create()
+      before: sdk.Workspaces.createWorkspace()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/envelopes"]["get"]
+    update:
+      x-speakeasy-name-override: listEnvelopes
+    x-speakeasy-metadata:
+      after: sdk.workspaces.listEnvelopes()
+      before: sdk.Workspaces.getWorkspaceEnvelopes()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.workspaces.get()
+      before: sdk.Workspaces.getWorkspace()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/users/{userId}"]["put"]
+    update:
+      x-speakeasy-name-override: update
+    x-speakeasy-metadata:
+      after: sdk.workspaceUsers.update()
+      before: sdk.WorkspaceUsers.updateWorkspaceUser()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/documents"]["post"]
+    update:
+      x-speakeasy-name-override: add
+    x-speakeasy-metadata:
+      after: sdk.workspaceDocuments.add()
+      before: sdk.WorkspaceDocuments.addWorkspaceDocument()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/users"]["post"]
+    update:
+      x-speakeasy-name-override: add
+    x-speakeasy-metadata:
+      after: sdk.workspaceUsers.add()
+      before: sdk.WorkspaceUsers.addWorkspaceUser()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.workspaces.list()
+      before: sdk.Workspaces.getWorkspaces()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/documents"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.workspaceDocuments.list()
+      before: sdk.WorkspaceDocuments.getWorkspaceDocuments()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/envelopes"]["post"]
+    update:
+      x-speakeasy-name-override: createEnvelope
+    x-speakeasy-metadata:
+      after: sdk.workspaces.createEnvelope()
+      before: sdk.Workspaces.createWorkspaceEnvelope()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
+  - target: $["paths"]["/v1/accounts/{accountId}/workspaces/{workspaceId}/documents/{documentId}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.workspaceDocuments.get()
+      before: sdk.WorkspaceDocuments.getWorkspaceDocument()
+      created_at: 1744385380088
+      reviewed_at: 1744385440689
+      type: method-name
